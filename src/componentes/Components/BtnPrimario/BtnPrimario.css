@@ -1,0 +1,34 @@
+.btnprimario button{
+    height: 45px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: none;
+    background-color: #195170;
+    outline: none;
+    transition: all .3s;
+    cursor: pointer;
+    color: #eeeeee;
+    font-size: 2rem;
+    font-family: 'Teko-Light', sans-serif;
+}
+.btnprimario button:hover{
+    background-color: #117fbb;
+}
+
+.btnprimario a{
+    display: block;
+    height: 45px;
+    margin: 12px 0;
+    border-radius: 6px;
+    background-color: #195170;
+    text-decoration: none;
+    transition: all .3s;
+    cursor: pointer;
+    color: #eeeeee !important;
+    font-size: 2rem;
+    text-align: center;
+}
+.btnprimario a:hover{
+    background-color: #117fbb;
+    color: #eeeeee;
+}

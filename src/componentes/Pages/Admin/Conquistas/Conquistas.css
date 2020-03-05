@@ -1,0 +1,38 @@
+.filtro-conquistas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #222222;
+}
+
+.filtro-conquistas div svg, .filtro-chave svg{
+    cursor: pointer;
+    margin-left: 7px;
+}
+.filtro-chave span{
+    margin-right: 7px;
+}
+
+.conquista div svg {
+    width: 45px;
+    height: 45px;
+}
+
+.conquista{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #195170;
+    margin: 0 1%;
+    padding: 1% 0;
+}
+.conquista aside span{
+    margin: 0 10px;
+}
+
+.conquista aside button{
+    margin: 0 0% 0 5%;
+    font-size: 1.5rem;
+}

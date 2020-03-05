@@ -1,0 +1,10 @@
+.btn-detalhes{
+    color: #195170;
+    padding: 9px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-detalhes > svg {
+    margin: 0 0 -7px 10px;
+}

@@ -1,0 +1,23 @@
+/* estilização checkbox permanecer logado */
+.check{
+    display: flex;
+    margin-bottom: 7%;
+}
+
+.checkmark{
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #d3d3d3;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.checkmark.perm{
+    background-color: #222222;
+}
+
+.checkmarklabel{
+    font-size: 1.25rem;
+    cursor: pointer;
+}

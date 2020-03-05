@@ -1,0 +1,192 @@
+@font-face{
+  font-family: Teko-Light;
+  src: url("./componentes/Fonts/Teko-Light.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: 'Teko-Light', sans-serif;
+  text-transform: lowercase;
+}
+
+h1 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*Container responsivo rendeziado no App.js*/
+#Container{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  background-color: #222222;
+}
+
+footer {
+  text-align: center;
+  color: #195170;
+  background-color: #222222;
+  padding: 1%;
+  margin: auto 18% 0 18%;
+  border-top: 1px solid #eeeeee;
+}
+
+footer a {
+  color: #195170;
+  text-decoration: none;
+}
+
+/*Seperação entre footer e container*/
+#Footer-Hr{
+  width: 70vw;
+  margin-top: 0px
+}
+
+/* background das telas */
+.background{
+  background-color: #eeeeee;
+  min-height: 80vh;
+  
+}
+
+/* responsividade */
+.responsive{
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 85px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+/* animação das telas */
+.animation{
+  animation: move 400ms;
+  animation-delay: 400ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes move {
+  from {
+      opacity: 0;
+      transform: translate(-35%);
+  }
+  to {
+      opacity: 1;
+      transform: translate(0%);
+  }
+}
+
+/* div que exibe uma lista de usuarios */
+.usuarios-aventureiros{
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #d3d3d3;
+}
+
+/* cabeçalho das telas admin e membro*/
+.admin-cabecalho{
+  color: #222222;
+  font-size: 2rem;
+  flex-direction: column;
+}
+
+.admin-cabecalho p{
+  margin: 0 0 0 4%;
+}
+
+.admin-cabecalho header span{
+  font-size: 1.5rem;
+  margin: 0% 4%;
+}
+
+.admin-cabecalho a{
+  text-decoration: none;
+  color: #195170;
+}
+
+.admin-cabecalho a:hover{
+  color: #117fbb;
+}
+
+.admin-cabecalho header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #d3d3d3;
+  padding: 2% 0;
+}
+
+.cabecalho{
+  color: #222222;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+  width: 820px;
+}
+.cabecalho a{
+  text-decoration: none;
+  color: #195170;
+}
+.cabecalho a:hover{
+  color: #117fbb;
+}
+
+/* titulo com linha na lateral*/
+.titulo-com-linha{
+  display: flex;
+  align-items: center;
+}
+
+.linha{
+  height: 1px;
+  width: 100%;
+  background-color: #222222;
+  margin: 0 2%;
+}
+
+/* input data */
+.input-data{
+  margin: 0 0 5% 7px;
+  outline: none;
+  font-family: 'Teko-Light', sans-serif;
+  font-size: 1.1rem;
+  width: 135px;
+  border: 1px solid #222222;
+  text-align: center;
+}
+
+/* alerta erro */
+.alerta-erro{
+  display: flex;
+  justify-content: center;
+}
+
+.alerta-erro span{
+  font-size: 1.5rem;
+  color: red;
+}
+
+/*  */

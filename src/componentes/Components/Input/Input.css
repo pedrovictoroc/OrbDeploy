@@ -1,0 +1,47 @@
+/* estilização input */
+
+.block-input > label {
+    color: #222222;
+}
+
+.block-input > input {
+    border: none;
+    border-bottom: 2px solid #222222;
+    outline: none;
+    height: 2rem;
+    width: 100%;
+    font-size: 22px;
+    margin: 0 0 8px 0;
+    color: #19517D;
+    font-family: 'Teko-Medium', sans-serif;
+
+    background-color: transparent;
+}
+.block-input > input:focus{
+    border-bottom: 2px solid #19517D;
+    box-shadow: 0 1px 0 0 #19517D;
+}
+
+/* animaçao input */
+.usuario{
+    animation: move2 500ms;
+    animation-delay: 950ms;
+    animation-fill-mode: backwards;
+}
+
+.senha{
+    animation: move2 500ms;
+    animation-delay: 1.4s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes move2 {
+    from {
+        opacity: 0;
+        transform: translate(-35%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0%);
+    }
+}

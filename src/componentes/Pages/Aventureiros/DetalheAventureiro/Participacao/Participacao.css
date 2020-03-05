@@ -1,0 +1,28 @@
+.nvl-participacao{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #222222;
+    border-top: 1px solid #d3d3d3;
+    padding: 3% 0;
+    width: 100%;
+}
+.nvl-participacao svg{
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+}
+
+.eventos-participacao{
+    margin: 3% 0;
+    width: 100%;
+}
+.eventos-participacao .evento{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #222222;
+    padding: 2% 4%;
+    font-size: 1.5rem;
+}

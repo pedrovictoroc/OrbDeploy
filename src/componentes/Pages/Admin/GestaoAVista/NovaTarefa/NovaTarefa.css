@@ -1,0 +1,6 @@
+.filtro-nova-tarefa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4.1%;
+}

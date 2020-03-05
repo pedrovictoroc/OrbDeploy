@@ -1,0 +1,147 @@
+.mural {
+    flex-direction: column;
+}
+.mural p{
+    font-size: 1.2rem;
+    margin: 0;
+}
+.mural span{
+    font-size: 2rem;
+}
+.mural header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mural header a{
+    text-decoration: none;
+    color: #195170;
+    font-size: 2rem;
+}
+  
+.mural header a:hover{
+    color: #117fbb;
+}
+
+.aniversariantes{
+    flex-wrap: wrap;
+}
+
+.data{
+    border-radius: 7px;
+    background-color: #33CCFF;
+    color: #eeeeee;
+    padding: 15px 30px;
+    margin: 0 4%;
+}
+
+blockquote{
+    margin: 0;
+    margin-left: 4%;
+    width: 70%;
+}
+
+blockquote p {
+    padding: 15px;
+    background: transparent;
+    border-radius: 5px;
+    font-style: italic;
+    color: #222222;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+
+/* lendas modal */
+.lendas-modal{
+    overflow: auto;
+}
+
+.lendas-modal section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    margin: 4%;
+}
+.lendas-modal section p{
+    font-size: 1.5rem;
+}
+
+.paginacao{
+    display: flex;
+    justify-content: center;
+}
+
+.paginacao .btn-num{
+    padding: 0px 10px;
+    margin: 8px;
+    color: #117fbb;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.paginacao .btn-num.selecionado{
+    background-color: #222222;
+    color: #eeeeee;
+}
+
+.paginacao .btn-num:hover{
+    background-color: #222222;
+    color: #eeeeee;
+}
+
+/* modal btn detalhes */
+.detalhes-mural {
+    overflow: auto;
+}
+.detalhes-mural section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.detalhes-mural section span{
+    font-size: 2.8rem;
+}
+.detalhes-mural section p{
+    font-size: 1.8rem;
+}
+
+.detalhes-mural aside header{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.detalhes-mural aside header svg{
+    margin: 0 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.pontos-heroi{
+    padding: 15px 30px;
+    margin: 0 40px;
+    background-color: #60b23e;
+    color: #eeeeee;
+    font-size: 1.8rem;
+    border-radius: 7px;
+}
+
+@media (max-width: 450px){
+    .grafico-heroi{
+        width: 90vw;
+    }
+}

@@ -1,0 +1,45 @@
+/* ajustando responsividade da tela */
+.notificacoes {
+    flex-direction: column;
+}
+
+/* estilização de cada notificação */
+.notif{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #222222;
+    color: #6dc04b;
+    font-size: 2em;
+}
+.notif p{
+    margin: 10px;
+}
+
+.btns {
+    display: flex;
+}
+
+/* estilização botao de tirar notificação */
+.btnX {
+    color: #195170;
+    font-weight: 600;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btnX:hover{
+    color: #117fbb;
+}
+
+.btnX.Xdesabilitado {
+    opacity: 0;
+    cursor: default;
+}
+
+/* responsividade dos botoes */
+@media (max-width: 509px){
+    .notif{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

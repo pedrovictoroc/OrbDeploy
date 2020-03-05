@@ -1,0 +1,113 @@
+.info-datas, .set-cluster{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #222222;
+    padding: 1% 0;
+}
+.info-datas div p{
+    margin: 0;
+}
+.info-datas div p span{
+    color: #195170;
+}
+
+.set-cluster div p {
+    margin: 12px 0;
+    text-align: center;
+    background-color: #33CCFF;
+    padding: 1% 70px;
+    border-radius: 7px;
+    color: #222222;
+    background-color: #6dc04b;
+}
+
+.settingClusters{
+    margin: 5% 15px;
+}
+
+.setClusterInc{
+    width: 18px;
+    height: 18px;
+    background-color: #222222;
+    cursor: pointer;
+}
+
+.setClusterInc::after{
+    content: '';
+    display: flex;
+    width: 18px;
+    height: 18px;
+    background-color: #eeeeee;
+    transform: rotate(28deg) translateX(-22px) translateY(-14px);
+}
+.setClusterInc::before{
+    content: '';
+    display: flex;
+    width: 18px;
+    height: 18px;
+    background-color: #eeeeee;
+    transform: rotate(-30deg) translateX(13px) translateY(1px);
+}
+
+.setClusterDec{
+    width: 18px;
+    height: 18px;
+    background-color: #222222;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.setClusterDec::after{
+    content: '';
+    display: flex;
+    width: 18px;
+    height: 18px;
+    background-color: #eeeeee;
+    transform: rotate(65deg) translateX(-18px) translateY(6px);
+    
+}
+.setClusterDec::before{
+    content: '';
+    display: flex;
+    width: 18px;
+    height: 18px;
+    background-color: #eeeeee;
+    transform: rotate(-68deg) translateX(1px) translateY(14px);
+}
+
+.set-metas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.set-meta{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.set-meta svg{
+    width: 25px;
+    height: 25px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.barracinza-admin{
+    width: 320px;
+    height: 6px;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    display: flex;
+    cursor: cell;
+}
+.barraverde-admin{
+    height: 10px;
+    background-color: #6dc04b;
+    margin-top: -2px;
+    margin-left: 2px;
+}

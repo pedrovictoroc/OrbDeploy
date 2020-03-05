@@ -1,0 +1,39 @@
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    display: flex;
+}
+
+.modal {
+    background: #eeeeee;
+    height: 85%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.btnFechar{
+    font-size: 3rem;
+    color: #eeeeee;
+    position: fixed;
+    right: 10%;
+    top: 5%;
+    cursor: pointer;
+    line-height: 32px;
+}
+@media (max-width: 650px){
+    .modal {
+        width: 98%;
+    }
+    .btnFechar{
+        top: 0;
+    }
+}

@@ -1,0 +1,18 @@
+.aventureiros{
+    flex-direction: column;
+    color: #222222;
+}
+.aventureiros span{
+    font-size: 2rem;
+}
+.filtros span{
+    line-height: 22px;
+    margin-right: 12px;
+}
+
+.filtros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1%;
+}

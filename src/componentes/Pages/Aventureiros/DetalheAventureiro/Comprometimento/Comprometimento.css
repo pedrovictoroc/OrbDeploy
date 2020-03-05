@@ -1,0 +1,38 @@
+.nvl-comprometimento{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #222222;
+    border-top: 1px solid #d3d3d3;
+    padding: 3% 0;
+    width: 100%;
+}
+.nvl-comprometimento svg{
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+}
+
+.atividades-usuario{
+    margin: 3% 0;
+    width: 100%;
+}
+
+.atividades-usuario .atividade{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #d3d3d3;
+    padding: 1% 4%;
+    font-size: 1.5rem;
+}
+
+.atividade p{
+    margin: 0 !important;
+}
+
+.dados-atividade{
+    display: flex;
+    width: 180px;
+}

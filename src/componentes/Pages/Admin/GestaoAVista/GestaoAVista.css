@@ -1,0 +1,34 @@
+.filtro-gestavista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4.1%;
+    border-bottom: 1px solid #222222;
+}
+
+.filtro-gestavista svg{
+    cursor: pointer;
+    margin-left: 7px;
+}
+
+.usuario-gestavista{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #d3d3d3;
+    padding: 1% 4%;
+}
+
+.usuario-gestavista span{
+    font-size: 1.5rem;
+}
+
+.usuario-gestavista p{
+    margin: 0 !important;
+}
+
+.dados-usuario-gestavista{
+    display: flex;
+    width: 180px;
+}

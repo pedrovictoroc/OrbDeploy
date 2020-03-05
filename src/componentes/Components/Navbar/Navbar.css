@@ -1,0 +1,185 @@
+/* estilização navbar */
+.menu nav {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li{
+    list-style: none;
+    padding: 0 2%;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 2em;
+    display: block;
+    padding: 10px;
+    color: #eeeeee;
+    transition: all .4s;
+    border-bottom: 2px solid #222222;
+}
+
+.menu a:hover{
+    border-bottom: 2px solid #33CCFF;
+}
+
+/* estilização do link da pagina atual */
+.paginaAtual a{
+    color: #33CCFF;
+    border-bottom: 2px solid #33CCFF;
+}
+
+.logout{
+    font-size: 2rem;
+    color: #eeeeee;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.logout svg{
+    width: 45px;
+    height: 45px;
+    transition: .5s all;
+}
+
+.logout:hover > span{
+    display: none;
+}
+.logout:hover svg{
+    transform: rotate(90deg);
+}
+
+/* qtd de notificações */
+.numNotificacao{
+    background-color: #195170;
+    color: #eeeeee;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-left: -22px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 29px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* navbar mobile */
+.navbar-mobile{
+    z-index: 1;
+    background-color: #222222;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+}
+.btns-navcima{
+    height: 80px;
+}
+.navbar-mobile .toggler{
+    position: absolute;
+    top: 15px;
+    margin-left: -30vw;
+    z-index: 2;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    opacity: 0;
+}
+.navbar-mobile .hamburger{
+    position: absolute;
+    top: 15px;
+    margin-left: -30vw;
+    z-index: auto;
+    width: 55px;
+    height: 55px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-mobile .hamburger > div{
+    position: relative;
+    width: 65%;
+    height: 2px;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+/* linhas hamburger*/
+.navbar-mobile .hamburger > div::before, 
+.navbar-mobile .hamburger > div::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+.navbar-mobile .hamburger > div::after{
+    top: 10px;
+}
+
+/* toggler animation */
+.navbar-mobile .toggler:checked + .hamburger > div{
+    transform: rotate(135deg);
+}
+.navbar-mobile .toggler:checked + .hamburger > div::before,
+.navbar-mobile .toggler:checked + .hamburger > div::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+.navbar-mobile .toggler:checked:hover + .hamburger > div{
+    transform: rotate(225deg);
+}
+.navbar-mobile .logoOrb{
+    position: absolute;
+    top: 5px;
+    margin-left: 20vw;
+}
+
+.navbar-mobile nav{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 88vh;
+    animation: show-nav 600ms;
+}
+  
+@keyframes show-nav {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+/* responsividade */
+.navbar-mobile nav.show-nav{
+    display: flex;
+}
+.btns-navcima.setheight{
+    height: 12vh;
+}
+@media (max-width: 860px){
+    .navbar-mobile{
+        display: flex;
+    }
+    .menu .navbar-desktop {
+        display: none;
+    }
+}

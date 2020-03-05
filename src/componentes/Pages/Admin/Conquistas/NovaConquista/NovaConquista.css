@@ -1,0 +1,46 @@
+section .inputs-nova-conquista{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 3%;
+    align-items: center;
+}
+
+section .inputs-nova-conquista span{
+    margin-right: 12px;
+}
+
+.input-data-nova-conquista{
+    margin: 7px 0 5% 7px;
+    outline: none;
+    font-family: 'Teko-Light', sans-serif;
+    font-size: 1.1rem;
+    width: 135px;
+    border: 1px solid #222222;
+    text-align: center;
+}
+
+.file-conquista input[type='file'] {
+    font-family: 'Teko-Light', sans-serif;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+.file-conquista  input[type=file]::-webkit-file-upload-button {
+    height: 45px;
+    width: 200px;
+    text-transform: lowercase;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: none;
+    background-color: #195170;
+    outline: none;
+    transition: all .3s;
+    cursor: pointer;
+    color: #eeeeee;
+    font-size: 2rem;
+    font-family: 'Teko-Light', sans-serif;
+}
+
+.file-conquista  input[type=file]::-webkit-file-upload-button:hover{
+    background-color: #117fbb;
+}
